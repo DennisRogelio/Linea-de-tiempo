@@ -1,21 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #9b59b6, #3498db); /* Gradiente de colores suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     margin: 0;
     padding: 20px;
-    color: #333; /* Color del texto para mantener la legibilidad */
+    color: #2c3e50;
 }
 
 h1 {
     text-align: center;
     color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .timeline {
     position: relative;
     max-width: 800px;
     margin: auto;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .timeline::before {
@@ -23,70 +26,78 @@ h1 {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 52.9%;
-    width: 10px;
-    background: #9b59b6; /* Color suave para la línea */
+    left: 50%;
+    width: 6px;
+    background: #ff9f43;
     transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .event {
     position: relative;
-    width: 45%;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-    transition: all 0.3s ease-in-out;
-    color: #333;
+    width: 40%; /* Cuadros más pequeños */
+    padding: 15px; /* Menos espacio interno */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: all 0.4s ease-in-out;
+    color: #34495e;
 }
 
 .event:hover {
     transform: scale(1.05);
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .event.left {
-    left: 0.9%;
+    left: 10;
+    margin-right: 55%;
     text-align: right;
 }
 
 .event.right {
-    left: 55%;
+    left: 56.8%;
 }
 
 .event::after {
     content: "";
     position: absolute;
-    top: 20px;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 4px solid #9b59b6;
+    top: 25px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 5px solid #ff9f43;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .event.left::after {
-    right: -14px;
+    right: -50px;
 }
 
 .event.right::after {
-    left: -14px;
+    left: -55px;
 }
 
 h2 {
     margin: 0;
-    color: #9b59b6; /* Color suave para los títulos */
+    color: #6a11cb;
+    font-size: 1.5em; /* Título más pequeño */
+    margin-bottom: 8px; /* Menos margen inferior */
 }
 
 .event-img {
-    max-width: 100%;
+    max-width: 40%; /* Imágenes ajustadas al cuadro */
     height: auto;
     border-radius: 8px;
-    margin: 10px 0;
+    margin: 10px auto; /* Menos margen */
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .details {
     color: #555;
-    font-size: 14px;
+    font-size: 14px; /* Texto más pequeño */
+    line-height: 1.5; /* Espaciado ajustado */
 }
