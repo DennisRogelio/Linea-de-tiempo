@@ -1,10 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #6a11cb, #2575fc),
+                url('endless-constellation.svg'); 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    background-position: center; 
+    background-blend-mode: overlay;
     margin: 0;
     padding: 20px;
     color: #2c3e50;
 }
+
 
 h1 {
     text-align: center;
@@ -35,8 +42,8 @@ h1 {
 
 .event {
     position: relative;
-    width: 40%; /* Cuadros más pequeños */
-    padding: 15px; /* Menos espacio interno */
+    width: 40%;
+    padding: 15px; 
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -83,21 +90,28 @@ h1 {
 h2 {
     margin: 0;
     color: #6a11cb;
-    font-size: 1.5em; /* Título más pequeño */
-    margin-bottom: 8px; /* Menos margen inferior */
+    font-size: 1.5em; 
+    margin-bottom: 8px; 
 }
 
 .event-img {
-    max-width: 40%; /* Imágenes ajustadas al cuadro */
+    max-width: 45%; /* Ajusta el tamaño para que ambas imágenes quepan */
     height: auto;
     border-radius: 8px;
-    margin: 10px auto; /* Menos margen */
-    display: block;
+    margin: 10px 5px; /* Espaciado entre imágenes */
+    display: inline-block; /* Para que se alineen horizontalmente */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .details {
     color: #555;
-    font-size: 14px; /* Texto más pequeño */
-    line-height: 1.5; /* Espaciado ajustado */
+    font-size: 14px; 
+    line-height: 1.5; 
 }
