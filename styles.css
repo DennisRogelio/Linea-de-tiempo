@@ -1,117 +1,136 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc),
-                url('fondo.svg'); 
-    background-size: cover;  
-    background-repeat: no-repeat; 
-    background-attachment: fixed;  
-    background-position: center; 
-    background-blend-mode: overlay;
-    margin: 0;
-    padding: 20px;
-    color: #2c3e50;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc), url("fondo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  margin: 0;
+  padding: 20px;
+  color: #2c3e50;
 }
 
-
 h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    padding: 40px 0;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
 }
 
 .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 6px;
-    background: #ff9f43;
-    transform: translateX(-50%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  background: #ff9f43;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .event {
-    position: relative;
-    width: 40%;
-    padding: 15px; 
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
-    transition: all 0.4s ease-in-out;
-    color: #34495e;
+  position: relative;
+  width: 40%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  transition: all 0.4s ease-in-out;
+  color: #34495e;
 }
 
 .event:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .event.left {
-    left: 10;
-    margin-right: 55%;
-    text-align: right;
+  left: 10;
+  margin-right: 55%;
+  text-align: right;
 }
 
 .event.right {
-    left: 56.8%;
+  left: 56.8%;
 }
 
 .event::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    width: 24px;
-    height: 24px;
-    background: #fff;
-    border: 5px solid #ff9f43;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 5px solid #ff9f43;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .event.left::after {
-    right: -50px;
+  right: -50px;
 }
 
 .event.right::after {
-    left: -55px;
+  left: -55px;
 }
 
 h2 {
-    margin: 0;
-    color: #6a11cb;
-    font-size: 1.5em; 
-    margin-bottom: 8px; 
+  margin: 0;
+  color: #6a11cb;
+  font-size: 1.5em;
+  margin-bottom: 8px;
 }
 
 .event-img {
-    max-width: 45%; /* Ajusta el tamaño para que ambas imágenes quepan */
-    height: auto;
-    border-radius: 8px;
-    margin: 10px 5px; /* Espaciado entre imágenes */
-    display: inline-block; /* Para que se alineen horizontalmente */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 45%; /* Ajusta el tamaño para que ambas imágenes quepan */
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 5px; /* Espaciado entre imágenes */
+  display: inline-block; /* Para que se alineen horizontalmente */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .img-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
+.img-uaq {
+  max-width: 30%;
+  display: flex;
+  justify-content: right;
+}
+.img-uaq-info {
+  max-width: 30%;
+  justify-content: left;
+}
 
 .details {
-    color: #555;
-    font-size: 14px; 
-    line-height: 1.5; 
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.nombres {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.escudos {
+  margin: 10px 5px;
+  display: flex;
+  align-items: center;
 }
