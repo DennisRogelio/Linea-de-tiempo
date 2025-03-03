@@ -93,11 +93,11 @@ h2 {
 }
 
 .event-img {
-  max-width: 45%; /* Ajusta el tamaño para que ambas imágenes quepan */
+  max-width: 45%;
   height: auto;
   border-radius: 8px;
-  margin: 10px 5px; /* Espaciado entre imágenes */
-  display: inline-block; /* Para que se alineen horizontalmente */
+  margin: 10px 5px;
+  display: inline-block;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -111,6 +111,7 @@ h2 {
   display: flex;
   justify-content: right;
 }
+
 .img-uaq-info {
   max-width: 30%;
   justify-content: left;
@@ -121,6 +122,7 @@ h2 {
   font-size: 14px;
   line-height: 1.5;
 }
+
 .nombres {
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
@@ -132,5 +134,17 @@ h2 {
 .escudos {
   margin: 10px 5px;
   display: flex;
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
   align-items: center;
+  /* Centra verticalmente el contenido */
+}
+
+.escudos img {
+  /* Aplicar estilos a las imágenes dentro de .escudos */
+  max-width: 100px;
+  /* Ajusta el tamaño máximo de las imágenes si es necesario */
+  height: auto;
+  margin: 0 10px;
+  /* Añade un pequeño margen horizontal entre las imágenes */
 }
