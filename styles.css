@@ -75,14 +75,23 @@ h1 {
   border: 5px solid #ff9f43;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Agregamos estilos para las imágenes de los escudos */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .event.left::after {
   right: -50px;
+  /* Coloca la imagen del escudo izquierdo */
+  background-image: url('URL_DEL_ESCUDO_IZQUIERDO.png');
+  /* Reemplaza con la URL de tu imagen */
 }
 
 .event.right::after {
   left: -55px;
+  /* Coloca la imagen del escudo derecho */
+  background-image: url('URL_DEL_ESCUDO_DERECHO.png');
+  /* Reemplaza con la URL de tu imagen */
 }
 
 h2 {
@@ -135,16 +144,11 @@ h2 {
   margin: 10px 5px;
   display: flex;
   justify-content: center;
-  /* Centra horizontalmente el contenido */
   align-items: center;
-  /* Centra verticalmente el contenido */
 }
 
 .escudos img {
-  /* Aplicar estilos a las imágenes dentro de .escudos */
   max-width: 100px;
-  /* Ajusta el tamaño máximo de las imágenes si es necesario */
   height: auto;
   margin: 0 10px;
-  /* Añade un pequeño margen horizontal entre las imágenes */
 }
